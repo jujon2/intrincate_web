@@ -6,8 +6,17 @@
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  /* src: url('../fonts/fontawesome-webfont.eot?v=4.7.0'); Original (Si tuvieramos hosting)*/
+  /* Producción - al no haber hosting hay que dar un path absoluto, en este caso el de git donde se ubica -
+  src: url('https://cdn.rawgit.com/jujon2/intrincate_web/d48b17cb/fontawesome-webfont.eot?v=4.7.0 '); */
+  /* Desarrollo -y ese path absoluto lo hacemos usando rawgit*/
+  src: url('https://rawgit.com/jujon2/intrincate_web/master/fontawesome-webfont.eot?v=4.7.0');
+  /* Original
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');*/
+  /* Producción
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('https://cdn.rawgit.com/jujon2/intrincate_web/d48b17cb/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('https://cdn.rawgit.com/jujon2/intrincate_web/d48b17cb/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('https://cdn.rawgit.com/jujon2/intrincate_web/d48b17cb/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('https://cdn.rawgit.com/jujon2/intrincate_web/d48b17cb/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');*/
+  /*Desarrollo */
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('https://rawgit.com/jujon2/intrincate_web/master/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('https://rawgit.com/jujon2/intrincate_web/master/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('https://rawgit.com/jujon2/intrincate_web/master/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('https://rawgit.com/jujon2/intrincate_web/master/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
